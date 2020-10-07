@@ -5,7 +5,7 @@ import java.io.FileReader;
 /**
  * Lahari N.
  * 
- * Project Description: The goal of the project is – given a list of points, 
+ * Project Description: The goal of the project is â€“ given a list of points, 
  * ordering them is such a way that the length of the path of all the points 
  * circles back to the home point in the shortest path possible.
  */
@@ -171,7 +171,6 @@ public class Tour {
 				currentClosest = current;
 				minLength = this.length();
 				currentClosest.next = currentClosest.next.next; // remove inserted point
-				//System.out.println("inside first if");
 			} 
 				
 			current = current.next; // move on from head, allowing you to set condition for while loop
@@ -195,11 +194,6 @@ public class Tour {
     
     public static void main(String[] args)
     {
-		
-/*		 Tour t = new Tour (new Point (100,100), new Point (500,100), new Point (500,
-		 500), new Point (100,500)); System.out.println("Length = "+ t.length());
-		 System.out.println(t.toString()); t.draw();
-		*/
 		  try {
 		  Tour t1 = new Tour();
 		  Tour t2 = new Tour();
